@@ -27,30 +27,30 @@ function init() {
     }
 
 }
-function hover() {
-    event.target.className += " kiemel"
-}
-function hoverOff() {
-    event.target.className = "gomb"
-}
-function nevMentes(form) {
-    var elsoJatekos = form.nev1.value;
-    var masodikJatekos = form.nev2.value;
-    alert("Első játékos neve: " + elsoJatekos + "\nMásodik játékos neve: " + masodikJatekos)
-    ID("kovetkezoJatekos").innerHTML = elsoJatekos + " következik"
-}
 function beleir() {
     if (szamlalo % 2 === 0) {
         event.target.innerHTML = X
-        ID("kovetkezoJatekos").innerHTML = elsoJatekos + " következik"
+        ID("kovetkezoJatekos").innerHTML = masodikJatekos + " következik"
     } else {
         event.target.innerHTML = O
-        ID("kovetkezoJatekos").innerHTML = masodikJatekos + " következik"
+
+        ID("kovetkezoJatekos").innerHTML = elsoJatekos + " következik"
     }
     szamlalo++
     event.target.className += " valasztott"
     event.target.removeEventListener("click", beleir)
     event.target.removeEventListener("mouseover", hover)
     event.target.removeEventListener("mouseout", hoverOff)
-
+}
+function nevMentes(form) {
+    elsoJatekos = form.nev1.value;
+    masodikJatekos = form.nev2.value;
+    alert("Első játékos neve: " + elsoJatekos + "\nMásodik játékos neve: " + masodikJatekos)
+    ID("kovetkezoJatekos").innerHTML = elsoJatekos + " következik"
+}
+function hover() {
+    event.target.className += " kiemel"
+}
+function hoverOff() {
+    event.target.className = "gomb"
 }
