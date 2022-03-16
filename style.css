@@ -4,6 +4,7 @@ h1 {
 body {
   background-color: rgb(255, 240, 243);
   text-align: center;
+  
 }
 section {
   margin: auto;
@@ -11,6 +12,7 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+
 .gomb {
   background-color: rgb(253, 153, 173);
   width: 33%;
