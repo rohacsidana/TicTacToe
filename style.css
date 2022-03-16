@@ -1,10 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito:wght@300&display=swap");
+
 h1 {
   color: rgb(155, 68, 109);
+}
+
+form {
+  background-color: rgb(247, 214, 221);
+  border-radius: 20px;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+}
+.beiros {
+  background-color: rgb(253, 153, 173);
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+label {
+  color: rgb(155, 68, 109);
+}
+::placeholder{
+  color: rgb(114, 92, 102);
 }
 body {
   background-color: rgb(255, 240, 243);
   text-align: center;
-  
+  font-family: "Fredoka", sans-serif;
 }
 section {
   margin: auto;

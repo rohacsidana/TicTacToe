@@ -28,6 +28,7 @@ function init() {
 
 }
 function beleir() {
+    
     if (szamlalo % 2 === 0) {
         event.target.innerHTML = X
         ID("kovetkezoJatekos").innerHTML = masodikJatekos + " következik"
@@ -35,6 +36,9 @@ function beleir() {
         event.target.innerHTML = O
 
         ID("kovetkezoJatekos").innerHTML = elsoJatekos + " következik"
+    }
+    if (szamlalo == $("section div").length-1) {
+        ID("kovetkezoJatekos").innerHTML = "Valaki biztos nyert &#128523;"
     }
     szamlalo++
     event.target.className += " valasztott"
