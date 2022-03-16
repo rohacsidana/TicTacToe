@@ -28,7 +28,7 @@ function init() {
 
 }
 function beleir() {
-    
+
     if (szamlalo % 2 === 0) {
         event.target.innerHTML = X
         ID("kovetkezoJatekos").innerHTML = masodikJatekos + " következik"
@@ -37,7 +37,7 @@ function beleir() {
 
         ID("kovetkezoJatekos").innerHTML = elsoJatekos + " következik"
     }
-    if (szamlalo == $("section div").length-1) {
+    if (szamlalo == $("section div").length - 1) {
         ID("kovetkezoJatekos").innerHTML = "Valaki biztos nyert &#128523;"
     }
     szamlalo++
@@ -49,7 +49,6 @@ function beleir() {
 function nevMentes(form) {
     elsoJatekos = form.nev1.value;
     masodikJatekos = form.nev2.value;
-    alert("Első játékos neve: " + elsoJatekos + "\nMásodik játékos neve: " + masodikJatekos)
     ID("kovetkezoJatekos").innerHTML = elsoJatekos + " következik"
 }
 function hover() {
