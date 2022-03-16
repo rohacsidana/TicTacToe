@@ -3,8 +3,8 @@ window.addEventListener("load", init)
 var szamlalo = 0
 var X = "<p>X</p>"
 var O = "<p>O</p>"
-var elsoJatekos = "1"
-var masodikJatekos = "2"
+var elsoJatekos = "Első játékos"
+var masodikJatekos = "Második játékos"
 function $(elem) {
     return document.querySelectorAll(elem)
 }
